@@ -1,0 +1,34 @@
+.col{
+   box-sizing: border-box;
+   margin:20px;
+   border:1px  solid #999;
+   background-color: #eee;
+   height: 50px;
+   float: left;
+}
+.row::before,.row::after{
+   content:"";
+   clear: both; /* row的元素内部任何浮动都可以清除掉 */
+   display: table;
+}
+.container{
+   box-sizing: border-box;
+   border: 1px solid #999;
+   padding: 10px;
+}
+.col-md-1{
+   width: 6%;
+}
+.col-md-2{
+   width: 12%;
+}
+.col-md-3{
+   width: 22%;
+}
+.col-md-4{
+   width: 30%;
+}
+.col-md-6{
+   width: 45%;
+}
+ 
